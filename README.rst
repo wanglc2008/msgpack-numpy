@@ -80,3 +80,16 @@ This software is licensed under the `BSD License
 See the included `LICENSE.rst 
 <https://github.com/lebedov/msgpack-numpy/blob/master/LICENSE.rst>`_ file for 
 more information.
+
+
+
+image = msgpack.unpackb(request.image_data, object_hook=m.decode,\
+                                max_str_len=2147483647,\
+                                max_bin_len=2147483647,\
+                                max_array_len=2147483647,\
+                                max_map_len=2147483647,\
+                                max_ext_len=2147483647) 
+
+
+
+
